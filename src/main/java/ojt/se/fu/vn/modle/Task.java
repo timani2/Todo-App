@@ -53,6 +53,12 @@ public class Task implements Serializable {
 
     @Override
     public String toString() {
-        return "Task [id=" + id + ", title=" + title + ", status=" + status + ", createdAt=" + createdAt + "]";
+        return "{\n" +
+                "  \"id\": " + id + ",\n" +
+                "  \"title\": \"" + title + "\",\n" +
+                "  \"status\": \"" + status + "\",\n" +
+                "  \"createdAt\": \"" + createdAt + "\"\n" +
+                "}";
     }
+
 }
